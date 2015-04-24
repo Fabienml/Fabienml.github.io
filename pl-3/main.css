@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    background-color: #000;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.button {
+    text-decoration: none;
+    font-size: 38px;
+    border: 1px solid #cd4365;
+    border-radius: 6px 6px 6px 6px;
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px 20px;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-align: center;
+    color: rgb(14, 14, 14);
+    display: inline-block;
+    background: #cd4365;
+    background: -moz-linear-gradient(top, #cd4365 0%, #ee577c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cd4365), color-stop(100%,#ee577c));
+    background: -webkit-linear-gradient(top, #cd4365 0%,#ee577c 100%);
+    background: -o-linear-gradient(top, #cd4365 0%,#ee577c 100%);
+    background: -ms-linear-gradient(top, #cd4365 0%,#ee577c 100%);
+    background: linear-gradient(to bottom, #cd4365 0%,#ee577c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd4365', endColorstr='#ee577c',GradientType=0 );
+}
+
+#q2, #q3, #v1, #v2, #v3, #v4, #v5 {
+    display: none;
+}
+.question {
+    text-align: center;
+}
+.question h3 {
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+.question h3 span {
+    color:#ee577c;
+}
+.answer {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ee577c;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.validate img {
+    display: block;
+    width: 208px;
+    height: 13px;
+    margin: 20px 0px;
+}
+.validate h3 {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.validate span {
+    display: block;
+    min-height: 30px;
+    padding-left: 35px;
+    padding-top: 5px;
+    background: url("") no-repeat scroll 0% 0% transparent;
+    margin: 10px 0px;
+}
+.validate strong {
+    color: #ee577c;
+}
+.validate ol {
+    margin-left: 40px;
+}
+.validate li {
+    margin: 10px 0px;
+}
+.btn {
+    height: 50px;
+    width: 251px;
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    display: block;
+    text-indent: -9999px;
+}
+.validate p {
+    text-align: center;
+    margin: 20px 0px;
+    color: #999;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color:black;
+    border: 1px solid #313131;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 5px;
+    color:white;
+}
+.first-table {width: 100%; text-align: center; border: 0; margin-top: 5px;}
+.style1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.style2 {
+    font-size: x-small;
+}
+.style7 {
+    font-size: large;
+    color:#ee577c;
+}
+.style8 {
+    font-size: 16px;
+    color: #ee577c;
+}
+.style9 {
+    font-size: x-large;
+    color:#ee577c;
+}
+.style10 {
+    color: white;
+    font-size: 28px;
+}
+.style13 {
+    text-align: justify;
+}
+.style14 {
+    font-size: x-small;
+}
+.style15 {
+    color: rgb(153, 153, 153);
+    font-size: medium;
+}
+.style16 {
+    font-size: xx-small;
+}
+.style17 {
+    text-decoration: underline;
+}
+.style19 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.style22 {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.style26 {
+    font-size: medium;
+    color: #666;
+}
+.style27 {
+}
+.style28 {
+    font-size: 16px; 
+    font-weight: bold;
+}
+.style29 {
+    text-align: center;
+}
+.style30 {
+    background-color:black;
+}
+.style32 {
+    text-align: center;
+}
+.style33 {
+    color: rgb(150, 0, 0);
+    font-size: medium;
+}
+.style34 {
+    color: #666;
+    font-size: small;
+}
+.style300 {
+    text-align: center;
+    color:white;
+}
+.style301 {
+    color:white;
+}
+.time {
+    font-weight: bold;
+    color: #ee577c;
+}
+.note-finish {
+    color:#666
+}
+.yp {
+    overflow: hidden;
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #292929 0%, #161616 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#292929), color-stop(100%,#161616)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #292929 0%,#161616 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #292929 0%,#161616 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #292929 0%,#161616 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #292929 0%,#161616 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#161616',GradientType=0 ); /* IE6-9 */
+}

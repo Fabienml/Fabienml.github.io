@@ -1,0 +1,413 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+:focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+img {
+  border: none;
+}
+input {
+  vertical-align: middle;
+}
+#main_top {
+  padding: 0 0 80px;
+}
+#q0 header {
+  margin-bottom: 30px;
+}
+#q0 h3{
+  margin: 20px auto 0 ;
+  font-weight: 600;
+  font-size: 23px;
+  max-width: 800px;
+  padding: 0 15px;
+}
+#q0 h3 strong {
+  color: #fff;
+}
+#q0 .lucky{
+  max-width: 800px;
+  margin: 20px auto 0 ;
+  font-size: 18px;
+  padding: 0 15px;
+}
+#q0 .stepinfo{
+  max-width: 600px;
+  margin: 20px auto 0 ;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0 15px;
+}
+#q0 .option-intro{
+  max-width: 500px;
+  border: 1px solid #313131;
+  text-align: center;
+  cursor: auto;
+  margin: 20px auto 12px;
+  padding: 30px 33px;
+}
+#q0 .option-title {
+  margin-left: 0px;
+}
+#q0 .answer {
+  margin: 25px auto 0;
+}
+.option, .option2, .option3, .option4 {
+  max-width: 500px;
+  border: 1px solid #313131;
+  padding: 40px 33px;
+  text-align: left;
+  cursor: pointer;
+  margin: 0 auto 12px;
+  background: black url('../images/option.png') 30px center no-repeat;
+  background: url('../images/option.png') 30px center no-repeat;
+  background: url('../images/option.png') 30px center no-repeat;
+}
+.selected, .selected2, .selected3, .selected4 {
+  background: black url('../images/option-selected.png') 30px center no-repeat        ;
+  background: url('../images/option-selected.png') 30px center no-repeat;
+  background: url('../images/option-selected.png') 30px center no-repeat;
+}
+.option-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 32px;
+  display: block;
+  padding: 0;
+  margin-left: 50px;
+}
+#timer {
+  color: #FB8A0B !important;
+}
+/*
+TOP BLUE: #157F8F
+GREY BG: #F2F2F2
+QUESTION TEXT: #4e4e4e
+DARK TEXT: #5E5E5E
+WHITE BOX BORDER: #D4D5D3
+RED BUTTON: #F0693B
+BLUE IN STATUS BAR: #9ED0D3
+font-family: 'Open Sans', sans-serif;
+font-weight: 300, 400 (italic), 600, 700;
+(light, normal, semi-bold, bold)
+*/
+.clearfix:before,.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+* {
+  padding           : 0;
+  margin            : 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing   : border-box;
+  box-sizing        : border-box;
+}
+.option {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  2-khtml-user-drag: none;
+  -khtml-user-select: none;
+  3-moz-user-select: none;
+  -moz-user-select:-moz-none;
+  -ms-user-select: none;
+  4user-select: none;
+}
+.option:active {
+  background-color:none;
+}
+#popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  background-color: rgba(0,0,0, .7 )
+}
+#popup {
+  background-color: #000000;
+  border: 1px solid #313131;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 0 #FFFFFF;
+  box-shadow: 0 0 5px 0 #FFFFFF;
+  left: 50%;
+  margin: -210px 0 0 -160px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 320px;
+}
+#intro {
+  font-size: 18px;
+  padding: 0 10px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+#intro span {
+  color: #fb8a0b !important;
+}
+header {
+  padding: 25px;
+  border-bottom: 1px solid #313131;
+}
+.buttons, .steps-button-final {
+  background: none repeat scroll 0 0 #fb8a0b;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 1px 4px 0 #d47101;
+  -webkit-box-shadow: 1px 4px 0 #d47101;
+  box-shadow: 1px 4px 0 #d47101;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 7px 0;
+  padding: 9px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.steps-button, .steps-button-final, .steps-button-agree {
+  margin: 20px 7px 0;
+  position: relative;
+  padding: 22px 60px;
+}
+.steps-button-final {
+  position: relative;
+}
+.steps-button-agree span {
+  background: none repeat scroll 0% 0% transparent !important;
+  background-position: -5999px -5999px !important;
+  position: absolute;
+  display: block !important;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+#timer {
+  color: #F0693B;
+}
+h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+}
+h3 {
+  color: #F90;
+  margin: 30px 15px 0 15px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.stepinfo {
+  color: #fff;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 5px 0 30px 0;
+}
+.question {
+  text-align: center;
+}
+form {
+  margin: 0 15px;
+}
+.answer {
+  cursor: pointer;
+  margin: 25px auto;
+}
+#q1, #q2, #q3, #q4, #final, #results-header, #v1, #v2, #v3, #v4, #v5 {
+  display: none;
+}
+#results-header {
+  text-align: center;
+}
+#final {
+  max-width: 545px;
+  margin: 30px auto;
+  padding: 15px;
+  border: 1px solid #313131;
+}
+.validate h3 {
+  font-size: 16px;
+  margin: 20px 0px;
+}
+.validate span {
+  display: block;
+  min-height: 30px;
+  padding-left: 35px;
+  padding-top: 5px;
+  background: url("./images/check.png") no-repeat scroll 0% 0% transparent;
+  margin: 10px 0px;
+}
+.validate strong {
+  color: #F90 ;
+}
+.validate ol {
+  margin-left: 40px;
+  list-style: decimal outside none;
+}
+.validate li {
+  margin: 10px 0px;
+}
+.validate p {
+  text-align: center;
+  margin: 20px 0px;
+}
+p {
+  font-size: 16px;
+}
+#terms {
+  font-size: 13px;
+}
+#agree {
+  width: 180px;
+  height: 94px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* 640x960 & 640x1136 */
+@media screen and (max-width : 700px), only screen and (max-device-width: 700px){
+  header {
+    padding: 15px;
+  }
+  h2 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+  }
+  h3 {
+    margin: 15px 15px 0 15px;
+    font-size: 14px;
+  }
+  #q0 h3{
+    font-size: 18px;
+    max-width: 800px;
+    padding: 0 15px;
+  }
+  #q0 h3 strong {
+    color: #fff;
+  }
+  #q0 .lucky{
+    max-width: 800px;
+    margin: 20px auto 0 ;
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  #q0 .stepinfo{
+    max-width: 600px;
+    margin: 20px auto 0 ;
+    font-style: normal;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  .stepinfo {
+    font-size: 12px;
+    margin: 5px 0 15px 0;
+  }
+  .option, .option2, .option3, .option4 {
+    padding: 15px 10px 15px 30px;
+    margin: 0 auto 12px
+  }
+  .option-title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 50px;
+    padding-top: 5px;
+  }
+  #q0 .option-title {
+    font-size: 18px;
+    margin-left: 0px;
+  }
+  #final {
+    margin: 15px auto;
+  }
+  #intro-image {
+    width: 200px;
+  }
+  .answer {
+    width: 150px;
+    margin: 15px auto;
+  }
+  #q0 .answer {
+    width: 110px;
+    margin: 25px auto 0;
+  }
+  .agree img {
+    width: 150px;
+  }
+  @media screen and (max-width : 600px), only screen and (max-device-width: 600px){
+    .answer {
+      margin: 12px auto;
+    }
+    #final {
+      margin: 15px 15px;
+    }
+    /* 360x640 & 320x480 */
+    @media screen and (max-width : 470px), only screen and (max-device-width: 470px){
+      #q0 .option{
+        margin: 20px 15px 12px;
+      }
+      header {
+        padding: 10px;
+      }
+      .option, .option2, .option3, .option4 {
+        margin: 0 15px 12px;
+      }
+    }
+    /* 360x640 & 320x480 */
+    @media screen and (max-width : 350px), only screen and (max-device-width: 350px){
+      header {
+        padding: 10px;
+      }
+    }

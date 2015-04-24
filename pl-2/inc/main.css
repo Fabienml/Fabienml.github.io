@@ -1,0 +1,168 @@
+* {
+  margin:0;
+  padding:0
+}
+:focus {
+  outline:0
+}
+img {
+  border:none
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size:100%;
+  font-weight:normal
+}
+body {
+  font:16px/16px'Open Sans', arial, sans-serif;
+  text-align:center;
+  background-color:#000;
+  max-width:100%;
+  color:#FFF
+}
+ol, ul {
+  list-style:none
+}
+a {
+  text-decoration:none;
+  color:#000
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block
+}
+.wrapper {
+  width:500px;
+  min-height:466px;
+  text-align:left;
+  margin:0 auto;
+  padding-top:15px
+}
+header {
+  width:100%;
+  text-align:center;
+  display:block
+}
+header h1 {
+  margin-bottom:20px;
+  margin-top:10px;
+  font-size:34pt;
+  color:#FFD05C;
+  text-transform:uppercase;
+  vertical-align:middle;
+  vertical-align:middle;
+  font-weight:bold
+}
+header p {
+  font-size:15pt;
+  line-height:18pt;
+  padding:5px;
+  text-align:left;
+  margin:15px 0
+}
+#q1 {
+  display:inline-block
+}
+#q5>h1>p {
+  margin:26.667px 0
+}
+.questions h1 {
+  font-weight:700;
+  margin:22px 0 10px;
+  font-size:20pt;
+  line-height:22pt
+}
+.questions h1 b {
+  color:#FFD05C
+}
+.yes, .no, #agree {
+  width:100%;
+  height:42px;
+  line-height:42px;
+  margin-bottom:10px;
+  display:block;
+  text-align:center
+}
+.yes:hover, #agree:hover {
+  background:#FFDB81
+}
+.no:hover {
+  background:#D6D6D6
+}
+.yes:active, .no:active, #agree:active {
+  background:#00C500
+}
+.yes, #agree {
+  padding:5px;
+  font-size:38px;
+  line-height:42px;
+  color:#FFF;
+  cursor:pointer;
+  background:#FFD05C
+}
+.no, #agree {
+  padding:5px;
+  font-size:38px;
+  line-height:42px;
+  color:#FFF;
+  cursor:pointer;
+  background:#AAA
+}
+.questions, .final {
+  display:none;
+  width:100%
+}
+.agreeButton {
+  display:block;
+  color:#FFF
+}
+.show {
+  display:inline-block;
+  -webkit-animation:showElement 1s 1;
+  -moz-animation:showElement 1s 1;
+  -ms-animation:showElement 1s 1;
+  -o-animation:showElement 1s 1;
+  animation:showElement 1s 1
+}
+@-webkit-keyframes showElement {
+  0% {
+    opacity:0
+  }
+  100% {
+    opacity:1
+  }
+}
+@-moz-keyframes showElement {
+  0% {
+    opacity:0
+  }
+  100% {
+    opacity:1
+  }
+}
+@-ms-keyframes showElement {
+    0% {
+        opacity:0
+    }
+    100% {
+        opacity:1
+    }
+}
+@-o-keyframes showElement {
+  0% {
+    opacity:0
+  }
+  100% {
+    opacity:1
+  }
+}
+@keyframes showElement {
+  0% {
+    opacity:0
+  }
+  100% {
+    opacity:1
+  }
+}
+#srfp {
+  display:none
+}
